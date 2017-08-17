@@ -54,11 +54,12 @@ UE.registerUI('dialog',function(editor,uiName){
     });
 
     //参考
+    var iconUrl = editor.options.UEDITOR_HOME_URL+'dialogs/equation/images/jme.png';
     var btn = new UE.ui.Button({
         name:'equation' + uiName,
         title:'插入公式',
         //需要添加的额外样式，指定icon图标，这里默认使用一个重复的icon
-        cssRules :'background-position: -830px 0px;',
+        cssRules :'background-image: url("' + iconUrl + '") !important;background-repeat:no-repeat',
         onclick:function () {
             //渲染dialog
             dialog.render();
