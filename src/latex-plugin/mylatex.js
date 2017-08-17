@@ -21,7 +21,7 @@ UE.registerUI('dialog',function(editor,uiName){
                 label:'确定',
                 onclick:function () {
                     //获取公式编辑器话框的内容
-                    var _value = document.getElementById("edui281_iframe").contentWindow.document;
+                    var _value = document.getElementById("edui281_iframe").contentWindow.document.;
                     console.log(_value);
                     //dialog.close(true);
                 }
